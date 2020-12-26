@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> 
+    <title>Document</title>
+</head>
+<body>
+   <div class="one">
+   <h1>What kind of car would you like to buy:</h1>
+   <input type="radio" id="proton">
+   <label for="proton">proton</label>
+   <input type="radio" id="honda">
+   <label for="honda">honda</label>
+   <input type="radio" id="ferrari">
+   <label for="ferrari">ferrari</label>
+   <input type="radio" id="ford">
+   <label for="ford">ford</label>
+   </div> 
+
+   <div class="two">
+    <h1>What colour do you want on your car:</h1> 
+    <select name="colour" id="colour">
+        <option value="black">black</option>
+        <option value="white">white</option>
+        <option value="brown">brown</option>
+        <option value="gray">gray</option>
+      </select>
+      <label for="other">Other:</label>
+      <input type="text" id="other"><br>
+   </div>
+
+   <div class="three">
+    <h1>Enter Other Specification for your preffered car:</h1>
+    <input type="text" id="specification" size="400"><br>
+   </div>
+
+   <div class="four">
+    <h1>Tell us how do we get touch in with you:</h1>
+    <form class="register_form" action="home.html" method="post" name="form" onsubmit="return validated()">
+    <div class="font"><label><b>Name:</b></label></div>
+    <input type="text" name="Name" id="Name">
+    <div id="name_error">name must be greater rhan 2 character</div>
+    <div class="font1"><b>Email:</b></div>
+    <input type="text" name="Email" id="Email">
+    <div id="email_error">email must be grater than 6 character</div>
+    <div class="font2"><b>Telephone:</b></div>
+    <input type="number" name="Telephone" id="Telephone">
+    <div id="telephone_error">telephone error</div>
+    <div class="font3">
+    <input type="checkbox" id="checkbox">
+    <label for="checkbox"> Please contact me as soon as possible regarding this matter.
+    <p>My gmail:cars@gmail.com</p> 
+    </label><br>
+    <button type="submit">Submit</button>
+    <button type="clear">Clear</button></br>
+    <a href="index.html" >Back to main page</a>
+    </div>
+    </form>
+   </div>
+   <script src="valid.js"></script>
+</body>
+</html>
